@@ -1,3 +1,10 @@
+/*
+ * Examen Polimorfismo 
+ * Autor: Juan Jesús Ávila Mota
+ * Clase Principal
+ * Proyecto que devuelve un producto random y muestra precio para venta al publico
+ * Aplicando Polimorfismo con clase abstracta e interface
+ * */
 package absint;
 import java.util.Random;
 import java.util.Scanner;
