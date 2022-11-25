@@ -24,7 +24,7 @@ public class Libreria {
   		   que de el usuario sea una de las dos esperadas
          */
         do {
-            System.out.println("¿Desea obtener más detalles del libro? Y/N");
+            System.out.println("¿Desea obtener más detalles del producto? Y/N");
             detalle = sr.nextLine().toUpperCase();
             if(detalle.equals("Y") || detalle.equals("N")) {ejecutarMostrarDetalle = true;}
             else {System.out.println("Escribe una de las opciones indicadas");}
