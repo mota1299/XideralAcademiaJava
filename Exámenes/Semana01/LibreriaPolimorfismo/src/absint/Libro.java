@@ -5,6 +5,7 @@ public abstract class Libro implements Producto{
         private String autor;
         private int paginas;
         private double precioCompra;
+      //Constructor para los separadores, implicitamente se esta creando un producto
         public Libro(String titulo,String autor,int paginas,double precioCompra){
             this.titulo = titulo;
             this.autor = autor;
@@ -42,11 +43,16 @@ public abstract class Libro implements Producto{
         public void setPrecioCompra(double precioCompra) {
             this.precioCompra = precioCompra;
         }
-        
+        /*
+         * Sobreescritura del método getPrecioVenta (Interfaz) donde se obtiene
+         * el dato calculado precio de venta en base al precio de compra y el
+         * porcentaje de ganancia obtenido de cada subclase
+         * */
+        @Override
         public double getPrecioVenta(double porcentajeGanancia){
             return ((getPrecioCompra()* porcentajeGanancia)+getPrecioCompra());
         }
-
+        //Sobreescritura de método toString para dar salida a console con formato requerido
         @Override
         public String toString(){
             return "Nombre del " +this.getClass().getSimpleName()+ ": " +getTitulo() + "\n" +

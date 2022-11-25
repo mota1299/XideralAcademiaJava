@@ -14,12 +14,9 @@ public class Novela extends Libro{
         this.porcentajeGanancia = porcentajeGanancia;
     }
     private double porcentajeGanancia = .30;
+    //Sobreescritura del método venta para dar salida de información y calcular la venta al público
     @Override
         public void venta(){
             System.out.print("El precio de: "+ this.getClass().getSimpleName()+" "+getTitulo()+",para venta al público es: " + getPrecioVenta(porcentajeGanancia));
     }
- /*   @Override
-    public double getPrecioVenta(double porcentajeGanancia){
-        return ((getPrecioCompra()* porcentajeGanancia)+getPrecioCompra()); 
-    }*/
 }

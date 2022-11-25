@@ -7,7 +7,7 @@ public abstract class Separador implements Producto{
     private double precioCompra;
     private double precioVenta;
 
-
+//Constructor para los separadores, implicitamente se esta creando un producto
     public Separador(String nombre, double longitud, double precioCompra) {
         this.nombre = nombre;
         this.longitud = longitud;
@@ -45,9 +45,16 @@ public abstract class Separador implements Producto{
     public void setPrecioVenta(double precioVenta) {
         this.precioVenta = precioVenta;
     }
+    /*
+     * Sobreescritura del método getPrecioVenta (Interfaz) donde se obtiene
+     * el dato calculado precio de venta en base al precio de compra y el
+     * porcentaje de ganancia obtenido de cada subclase
+     * */
+    @Override
     public double getPrecioVenta(double porcentajeGanancia) {
         return ((getPrecioCompra()* porcentajeGanancia)+getPrecioCompra());
     }
+    ////Sobreescritura de método toString para dar salida a console con formato requerido
     @Override
     public String toString(){
         return "Nombre del :"+this.getClass().getSimpleName()+" "+ getNombre()+ " \n" +
