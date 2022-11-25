@@ -45,6 +45,9 @@ public abstract class Separador implements Producto{
     public void setPrecioVenta(double precioVenta) {
         this.precioVenta = precioVenta;
     }
+    public double getPrecioVenta(double porcentajeGanancia) {
+        return ((getPrecioCompra()* porcentajeGanancia)+getPrecioCompra());
+    }
     @Override
     public String toString(){
         return "Nombre del :"+this.getClass().getSimpleName()+" "+ getNombre()+ " \n" +

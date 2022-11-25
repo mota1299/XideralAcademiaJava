@@ -18,9 +18,9 @@ public class Cuento extends Libro{
     public void venta(){
         System.out.print("El precio de: "+ this.getClass().getSimpleName()+" "+getTitulo()+",para venta al público es: " + getPrecioVenta(porcentajeGanancia));
     }
-    @Override
+  /*  @Override
     public double getPrecioVenta(double porcentajeGanancia){
         return ((getPrecioCompra()* porcentajeGanancia)+getPrecioCompra());
-    }
+    }*/
 }
 

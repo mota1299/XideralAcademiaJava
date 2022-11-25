@@ -45,8 +45,10 @@ public class Libreria {
         if (detalle.equals("Y")) {
             System.out.println(l);
             System.out.println("Fin del programa");
+            System.exit(0);
         } else if(detalle.equals("N")){
             System.out.println("Fin del programa");
+            System.exit(0);
         }
     }
 

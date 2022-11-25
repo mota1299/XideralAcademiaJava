@@ -42,6 +42,10 @@ public abstract class Libro implements Producto{
         public void setPrecioCompra(double precioCompra) {
             this.precioCompra = precioCompra;
         }
+        
+        public double getPrecioVenta(double porcentajeGanancia){
+            return ((getPrecioCompra()* porcentajeGanancia)+getPrecioCompra());
+        }
 
         @Override
         public String toString(){
