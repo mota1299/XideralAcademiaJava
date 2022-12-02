@@ -1,7 +1,11 @@
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-
+/*
+ * Juan Jesús Ávila Mota 
+ * 1/12/2022
+ * Programa que utiliza inyección de dependencias para asignar empleados a sucursales
+ * */
 public class ProductosAvila {
 
 	public static void main(String[] args) throws InvalidoException  {
@@ -35,7 +39,7 @@ public class ProductosAvila {
 				+ "1.- Sucursal Angelés \n"
 				+ "2.- Sucursal Esperanza");
 		//Ejecución con multicatch
-		/*try(Scanner sr = new Scanner(System.in)){
+		try(Scanner sr = new Scanner(System.in)){
 			if(sr.hasNextInt()) { 
 			numeroSucursal = sr.nextInt();
 			validar(numeroSucursal);
@@ -50,9 +54,9 @@ public class ProductosAvila {
 			//e.printStackTrace();
 			System.out.println("Dato Invalido");
 			main(args);
-		}*/
+		}
 		
-		//Ejecución con try with resources
+		/*//Ejecución con try with resources
 		try(Scanner sr = new Scanner(System.in)){
 		if(sr.hasNextInt()) { 
 		numeroSucursal = sr.nextInt();
@@ -64,7 +68,7 @@ public class ProductosAvila {
 		break;
 		}
 		}
-	}
+	}*/
 		//En que trabaja cada empleado
 		//emp1.trabaja();
 		System.out.println("Fin del programa");

@@ -1,4 +1,11 @@
-
+/*
+ * Juan Jesús Ávila Mota 
+ * 1/12/2022
+ * Programa que demuestra los 4 usos de final que calcula el precio de Mochilas utilizando su precio de compra
+ * porcentaje de ganancia e IVA
+ * 
+ * 
+ * */
 public class Principal {
 	
 	public static void main(String[] args) {
