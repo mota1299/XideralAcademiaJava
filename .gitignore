@@ -13,6 +13,7 @@ local.properties
 *.project
 */.classpath
 */.project
+Servers/
 
 
 # External tool builders
